@@ -18,3 +18,5 @@ export function Header() {
         </header>
     );
 }
+
+//Fiquei no minuto 48:23
