@@ -1,8 +1,9 @@
 .appWrapper {
   display: flex;
-
+  width: 100vw;
   main {
     flex: 1;
-
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 }

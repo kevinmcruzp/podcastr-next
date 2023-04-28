@@ -1,11 +1,11 @@
 .episode {
-  max-width: 35rem;
+  max-width: 48rem;
   padding: 3rem 2rem;
   margin: 0 auto;
   box-sizing: border-box;
   
   height: calc(100vh - 6.5rem);
-  overflow-y: scroll;
+  overflow-y: auto;
 
   .thumbnailContainer {
     position: relative;
@@ -33,7 +33,7 @@
       }
 
       &:last-child {
-        right: 0px;
+        right: 40px;
         top: 50%;
         background: var(--green-500);
         transform: translate(50%, -50%);
