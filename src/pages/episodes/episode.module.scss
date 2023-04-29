@@ -2,7 +2,6 @@
   max-width: 48rem;
   padding: 3rem 2rem;
   margin: 0 auto;
-  box-sizing: border-box;
   
   height: calc(100vh - 6.5rem);
   overflow-y: auto;
@@ -12,6 +11,7 @@
 
     img {
       border-radius: 1rem;
+      object-fit: cover;
     }
 
     button {
@@ -33,7 +33,7 @@
       }
 
       &:last-child {
-        right: 40px;
+        right: 0;
         top: 50%;
         background: var(--green-500);
         transform: translate(50%, -50%);

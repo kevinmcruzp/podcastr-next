@@ -1,12 +1,10 @@
-import { parseISO } from "date-fns";
-import format from "date-fns/format";
-import ptBR from "date-fns/locale/pt-BR";
 import Image from "next/image";
-import { convertDurationToTimeString } from "../../utils/convertDurationToTimeString";
 
+import { format, parseISO } from "date-fns";
+import { ptBR } from "date-fns/locale";
 import { GetStaticPaths, GetStaticProps } from "next";
-
-import Link from "next/link";
+import { useRouter } from "next/router";
+import { convertDurationToTimeString } from "../../utils/convertDurationToTimeString";
 import styles from "./episode.module.scss";
 
 type Episode = {
@@ -26,14 +24,18 @@ type EpisodeProps = {
 };
 
 export default function Episode({ episode }: EpisodeProps) {
+  const router = useRouter();
   return (
     <div className={styles.episode}>
       <div className={styles.thumbnailContainer}>
-        <Link href="/">
-          <button type="button">
-            <img src="/arrow-left.svg" alt="Voltar" />
-          </button>
-        </Link>
+        <button
+          type="button"
+          onClick={() => {
+            router.push("/");
+          }}
+        >
+          <img src="/arrow-left.svg" alt="Voltar" />
+        </button>
         <Image
           width={700}
           height={160}
