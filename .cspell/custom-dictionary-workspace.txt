@@ -1,7 +1,15 @@
 # Custom Dictionary Words
+Duração
 Embaralhar
+episódio
+episódios
+Integrantes
+lançamentos
 Pausar
+Podcastr
 Repetir
 Selecione
 Tocando
 Tocar
+Todos
+Voltar
