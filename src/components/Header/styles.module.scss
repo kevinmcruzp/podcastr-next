@@ -3,7 +3,7 @@
   top: 0;
   z-index: 5;
 
-  background: var(--white);
+  background: var(--background-1);
   height: 6.5rem;
 
   display: flex;
@@ -11,12 +11,18 @@
 
   padding: 2rem 4rem;
 
-  border-bottom: 1px solid var(--gray-100);
+  border-bottom: 1px solid var(--gray-200);
+
+  transition: filter 0.2s;
+
+  img:hover {
+    filter: invert(0.35) sepia(2) saturate(3) hue-rotate(230deg);
+  }
 
   p {
       margin-left: 2rem;
       padding: 0.25rem 0 0.25rem 2rem;
-      border-left: 1px solid var(--gray-100);
+      border-left: 1px solid var(--gray-200);
 
   }
 

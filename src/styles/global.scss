@@ -13,12 +13,16 @@
   --gray-500: #808080;
   --gray-800: #494d4b;
 
-  --green-500: #04d361;
+  --green-500: #67E480;
 
   --purple-300: #9f75ff;
   --purple-400: #9164fa;
   --purple-500: #8257e5;
   --purple-800: #6f48c9;
+
+  --background-2: #202024;
+  --background-1: #121214;
+
 }
 
 @media (max-width: 1080px) {
@@ -34,7 +38,36 @@
 }
 
 body {
-  background: var(--gray-50);
+  background: var(--background-1);
+
+  /* Webkit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray-800);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gray-500);
+}
+
+/* Firefox */
+::-moz-scrollbar {
+  width: 10px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: var(--gray-800);
+  border-radius: 5px;
+}
+
+::-moz-scrollbar-thumb:hover {
+  background-color: var(--gray-500);
+}
+
 }
 
 h1,
@@ -45,7 +78,7 @@ h5,
 h6 {
   font-weight: 600;
   font-family: Lexend, sans-serif;
-  color: var(--gray-800);
+  color: var(--gray-200);
 }
 
 body,

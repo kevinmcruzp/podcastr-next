@@ -5,8 +5,8 @@
   width: 26.5rem;
   height: 100vh;
 
-  background: var(--purple-500);
-  color: var(--white);
+  background: var(--background-2);
+  color: var(--gray-100);
 
   display: flex;
   flex-direction: column;
@@ -140,7 +140,7 @@
       width: 4rem;
       height: 4rem;
       border-radius: 1rem;
-      background: var(--purple-400);
+      background: var(--purple-500);
 
       &:hover:not(:disabled) {
         filter: brightness(0.95);
